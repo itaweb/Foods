@@ -5,11 +5,10 @@ setInterval(() => {
   i++;
   const icon = document.querySelector(".section-1-icons .change");
   icon.classList.remove("change");
-  if (i > icons.length){
+  if (i > icons.length) {
     icons[0].classList.add("change");
-    i=1;
-  } else{
+    i = 1;
+  } else {
     icon.nextElementSibling.classList.add("change");
   }
-  
 }, 4000);
